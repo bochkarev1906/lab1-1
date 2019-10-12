@@ -49,4 +49,18 @@ public class Customer {
     public void setMobilePhone(String mobilePhone) {
         this.mobilePhone = mobilePhone;
     }
+
+    public boolean checkDocument(){
+        if (document.length() == 10 && isNumeric(document) == true){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+
+    public boolean isNumeric(String str)
+    {
+        return str.matches("-?\\d+(\\.\\d+)?");
+    }
 }
