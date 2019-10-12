@@ -33,6 +33,6 @@ public class Main {
         Booking booking1 = new Booking(customer1, carCatalog.getCar(0), strings.get(0), strings.get(1), Integer.parseInt(strings.get(2)));
         fileReader3.close();
         System.out.println(carCatalog.searchOnColor("white"));
-        System.out.println(customer1.checkDocument());
+        System.out.println(booking1.getAmountBookings());
     }
 }
