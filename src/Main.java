@@ -12,7 +12,7 @@ public class Main {
             strings.add(scanner1.nextLine());
         }
         CarCatalog carCatalog = new CarCatalog();
-        carCatalog.addCar(strings.get(0), strings.get(1), strings.get(2), strings.get(3), strings.get(4), Double.parseDouble(strings.get(5)));
+        carCatalog.addCar(strings.get(0), strings.get(1), strings.get(2), strings.get(3), strings.get(4), Double.parseDouble(strings.get(5)), Integer.parseInt(strings.get(6)));
         fileReader1.close();
 
         FileReader fileReader2 = new FileReader("customer1.txt");
@@ -33,6 +33,6 @@ public class Main {
         Booking booking1 = new Booking(customer1, carCatalog.getCar(0), strings.get(0), strings.get(1), Integer.parseInt(strings.get(2)));
         fileReader3.close();
         System.out.println(carCatalog.searchOnColor("white"));
-
+        System.out.println(booking1.getCostOfBooking());
     }
 }

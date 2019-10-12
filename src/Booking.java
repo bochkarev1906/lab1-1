@@ -17,4 +17,8 @@ public class Booking {
             System.out.println("Not enough driving experience!");
         }
     }
+
+    public int getCostOfBooking(){
+        return amountDays * car.getCost();
+    }
 }

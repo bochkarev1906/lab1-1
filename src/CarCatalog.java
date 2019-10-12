@@ -4,8 +4,8 @@ public class CarCatalog {
     private ArrayList<Car> cars = new ArrayList<Car>();
 
     public void addCar(String make, String model, String number,
-                       String segment, String color, double minDrivingExperience){
-        Car car = new Car(make, model, number, segment, color, minDrivingExperience);
+                       String segment, String color, double minDrivingExperience, int cost){
+        Car car = new Car(make, model, number, segment, color, minDrivingExperience, cost);
         cars.add(car);
     }
 

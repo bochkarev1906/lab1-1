@@ -5,14 +5,16 @@ public class Car {
     private String segment;
     private String color;
     private double minDrivingExperience;
+    private int cost;
 
-    Car (String make, String model, String number, String segment, String color, double minDrivingExperience){
+    Car (String make, String model, String number, String segment, String color, double minDrivingExperience, int cost){
         this.make = make;
         this.model = model;
         this.number = number;
         this.segment = segment;
         this.color = color;
         this.minDrivingExperience = minDrivingExperience;
+        this.cost = cost;
     }
 
     public void setColor(String color) {
@@ -33,5 +35,9 @@ public class Car {
 
     public double getMinDrivingExperience() {
         return minDrivingExperience;
+    }
+
+    public int getCost() {
+        return cost;
     }
 }

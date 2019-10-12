@@ -20,8 +20,8 @@ public class CarCatalogTest {
         while (scanner1.hasNextLine()){
             strings.add(scanner1.nextLine());
         }
-        carCatalog.addCar(strings.get(0), strings.get(1), strings.get(2),
-                strings.get(3), strings.get(4), Double.parseDouble(strings.get(5)));
+        carCatalog.addCar(strings.get(0), strings.get(1), strings.get(2), strings.get(3),
+                strings.get(4), Double.parseDouble(strings.get(5)), Integer.parseInt(strings.get(6)));
         fileReader1.close();
     }
 
