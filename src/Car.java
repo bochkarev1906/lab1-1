@@ -6,6 +6,8 @@ public class Car {
     private String color;
     private double minDrivingExperience;
     private int cost;
+    private double mileage;
+    private boolean notCheckCar = true;
 
     Car (String make, String model, String number, String segment, String color, double minDrivingExperience, int cost){
         this.make = make;
@@ -39,5 +41,16 @@ public class Car {
 
     public int getCost() {
         return cost;
+    }
+
+    public void needCheckCar(){
+        notCheckCar = false;
+    }
+
+    public void repairCar(){
+        if (mileage > 100000 || notCheckCar == false){
+            //Mechanic are repairing car...
+            notCheckCar = true;
+        }
     }
 }
