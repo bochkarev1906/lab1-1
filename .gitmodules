@@ -1,0 +1,3 @@
+[submodule "xml-serializer"]
+	path = xml-serializer
+	url = https://github.com/vovalexeev/XML-serializer
