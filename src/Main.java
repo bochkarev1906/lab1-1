@@ -34,5 +34,7 @@ public class Main {
         fileReader3.close();
         System.out.println(carCatalog.searchOnColor("white"));
         System.out.println(booking1.getCostOfBooking());
+
+        Receipt receipt = new Receipt(booking1);
     }
 }

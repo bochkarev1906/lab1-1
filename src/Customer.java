@@ -21,6 +21,9 @@ public class Customer {
     public double getDrivingExperience() {
         return drivingExperience;
     }
+    public String getFullName() {
+        return lastName + firstName;
+    }
 
     public void setDrivingExperience(double drivingExperience) {
         this.drivingExperience = drivingExperience;

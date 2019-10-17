@@ -27,6 +27,9 @@ public class Car {
         return color;
     }
 
+    public String getModel() {
+        return model;
+    }
     public String getMake() {
         return make;
     }

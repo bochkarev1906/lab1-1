@@ -18,6 +18,26 @@ public class Booking {
         }
     }
 
+    public String getDate(){
+        return this.date;
+    }
+
+    public String getpickupLocation(){
+        return this.pickupLocation;
+    }
+
+    public int getamountDays(){
+        return this.amountDays;
+    }
+
+    public Car getCar(){
+        return this.car;
+    }
+
+    public Customer getCustomer(){
+        return this.customer;
+    }
+
     public int getCostOfBooking(){
         return amountDays * car.getCost();
     }
